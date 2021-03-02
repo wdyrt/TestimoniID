@@ -6,40 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ini Cuma percobaan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
-
     <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="410dp"
-        android:layout_height="47dp"
+        android:id="@+id/searchView3"
+        android:layout_width="375dp"
+        android:layout_height="30dp"
+        android:contextClickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.1" >
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="413dp"
-        android:layout_height="134dp"
-        android:src="@drawable/gradient"
+    </SearchView>
+
+    <HorizontalScrollView
+        android:layout_width="382dp"
+        android:layout_height="242dp"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.291"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.105" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView3"
+        app:layout_constraintVertical_bias="0.083"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="145dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="WO 1"
+                tools:layout_editor_absoluteX="23dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PO 2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="BT 3"
+                tools:layout_editor_absoluteX="236dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="WO 4"
+                tools:layout_editor_absoluteX="343dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="PO 5"
+                tools:layout_editor_absoluteX="449dp"
+                tools:layout_editor_absoluteY="145dp" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
