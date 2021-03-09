@@ -1,6 +1,8 @@
 package com.bd.testimoniid;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -26,5 +28,10 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
     }
-
+    Intent pindah;
+    public void keFD2 (View view){
+        pindah = new Intent(MainActivity.this, InsideCategory.class);
+        startActivity(pindah);
+        finish();
+    }
 }
