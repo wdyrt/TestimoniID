@@ -32,6 +32,5 @@ public class MainActivity extends AppCompatActivity {
     public void keFD2 (View view){
         pindah = new Intent(MainActivity.this, InsideCategory.class);
         startActivity(pindah);
-        finish();
     }
 }
