@@ -1,4 +1,4 @@
-package com.bd.testimoniid.ui.notifications;
+package com.bd.testimoniid.ui.account;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

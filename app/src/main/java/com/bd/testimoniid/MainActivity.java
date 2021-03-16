@@ -33,4 +33,10 @@ public class MainActivity extends AppCompatActivity {
         pindah = new Intent(MainActivity.this, InsideCategory.class);
         startActivity(pindah);
     }
+    Intent move;
+    public void keFD3 (View view) {
+        move = new Intent(MainActivity.this, InsideChoosen.class);
+        startActivity(move);
+    }
+
 }
