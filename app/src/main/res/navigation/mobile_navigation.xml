@@ -14,12 +14,12 @@
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.bd.testimoniid.ui.category.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_category"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.bd.testimoniid.ui.account.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_account"
         tools:layout="@layout/fragment_notifications" />
 </navigation>
